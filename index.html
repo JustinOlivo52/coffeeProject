@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!--Css and bootstrap files-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <title>The Mobile Coffee House</title>
+    </head>
+    <body>
+        <!--The header jumbotron just planning to put an image logo words favorite drink button-->
+        <header class="jumbotron jumbotron-fluid pb-4 pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                        <a href="index.html"><img src="img/coffeeHeader.jpg" class="img-fluid headImg"></a>
+                    </div>
+                    <div class="col">
+                        <h1>The Mobile Cafe</h1>
+                        <h2>Your Coffee Shop From Home.</h2>
+                    </div>
+                    <div class="col col-md-4 col-xl-2">
+                       <a  href="https://athome.starbucks.com/recipe/ao-may-june21/iced-caramel-macchiato" target="_blank">
+                            <button class="btn btn-lg btn-dark text-white mt-3 shakeBtn" id="headerBtn">Our Favorite Drink</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <a class="navbar-brand ml-2" href="index.html">
+                <img src="img/coffeeHeader.jpg"  width="30" height="30" id="navbarLogo" alt="Coffee cup logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="navbar-item active text-dark mr-2">
+                        <a class="text-nowrap" href="#">><button class="btn btn-md btn-light navBtn shakeBtn">Home</button></a>
+                    </li>
+                    <li class="navbar-item text-dark mr-2">
+                        <a href="aboustus.html"><button class="btn btn-md btn-light navBtn shakeBtn">About Us</button></a>
+                    </li>
+                    <li class="navbar-item text-dark mr-2">
+                        <a href="comingsoon.html"><button class="btn btn-md btn-light navBtn shakeBtn">Coming Soon</button></a>
+                    </li>
+                </ul>
+                <span class="col-4 col-md-2 navbar-text ml-auto">
+                    <!-- removed data attributes data-toggle="modal" data-target="#loginModal"-->
+                    <a role="button" id="loginBtn" data-toggle="modal" data-target="#loginModal">
+                        <button type="button"  class="btn btn-light btn-lg text-dark mx-auto shakeBtn">Login</button> 
+                    </a>
+                </span>
+            </div>
+        </nav>
+
+        <!--Login Modal-->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title lobster">Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only bungie" for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only bungie" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio">
+                                            <label class="form-check-label bungie"> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="submit" class="btn btn-success btn-sm ml-auto shakeBtn bungie">Sign in</button>
+                                    <button type="button" class="btn btn-secondary btn-sm ml-1 bungie" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <!--First section -->
+            <div class="row row-content align-items-center">
+                <div class="col-4 col-md-3 mt-4">
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVTkoPB1rnwz" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="col-4 col-md-5">
+                    <div class="media">
+                        <div class="media-body">
+                            <h3 class="lobster" ><u>The Open Water Cafe</u></h3>
+                            <p class="bungie">Take yourself into calm and collected waters with a smooth playlist followed by a nice, hot, <a class="drinkLink" href="https://athome.starbucks.com/recipe/maple-cinnamon-macchiato" target="_blank"><strong>Mapple Cinnamon Macchiato</strong></a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <a href="https://athome.starbucks.com/recipe/maple-cinnamon-macchiato" target="_blank"><img class="drinkImg" src="img/mapleCinnamon.jpg" alt="Maple Cinnamon Macchiato"></a>
+                </div>
+            </div>
+            <hr>
+            <!--Second Section-->
+            <div class="row row-content align-items-center">
+                <div class="col-4 col-md-4">
+                    <a href="https://athome.starbucks.com/recipe/cold-brew-old-fashioned" target="_blank"><img class="mr-3 drinkImg" src="img/weekendLounge.jpg" alt="Coffee old fashioned"></a>
+                </div>
+                <div class="col-4 col-md-5">
+                    <div class="media">
+                            <div class="media-body align-self-center">
+                                <h3 class="lobster"><u>The Weekend Lounge</u></h3>
+                                <p class="bungie">
+                                    Just got done with that last shift now its time for the weekend? 
+                                    Give yourself the best of both worlds! Have a nice <a class="drinkLink" href ="https://athome.starbucks.com/recipe/cold-brew-old-fashioned" target="_blank"><strong>Old Fashioned Coffee</strong></a> to shake the work week away.</p>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3">
+                    <iframe src="https://open.spotify.com/embed/playlist/0CFuMybe6s77w6QQrJjW7d" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+            <hr>
+            <!--Third Section-->
+            <div class="row row-content align-items-center">
+                <div class="col-4 col-md-3">
+                    <iframe src="https://open.spotify.com/embed/playlist/4nuO2cmmwyQIP2Zqco61UE" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="col-4 col-md-5">
+                    <div class="media">
+                        <div class="media-body align-self-center">
+                            <h3 class="lobster"><u>The Irish Getaway Cafe</u></h3>
+                            <p class="bungie">
+                                Treat yourself to a nice getaway to Ireland. 
+                                Enjoy yourself a nice <a class="drinkLink" href="https://athome.starbucks.com/recipe/iced-irish-coffee" target="_blank"><strong>Irish Iced Coffee</strong></a> in one of the local pubs in town.
+                                Who knows, you might even fancy yourself to join in with the sing alongs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <a href="https://athome.starbucks.com/recipe/iced-irish-coffee" target="_blank"><img class="drinkImg" src="img/irishCoffee.jpg"></a>
+                </div>
+            </div>
+            <hr>
+             <!--Fourth Section-->
+             <div class="row row-content align-items-center">
+                 <div class="col-4 col-md-4">
+                     <a href="https://athome.starbucks.com/recipe/cafe-cubano" target="_blank"><img class="drinkImg" src="img/cafeCubano.jpg"></a>
+                 </div>
+                 <div class="col-4 col-md-5">
+                    <div class="media">
+                        <div class="media-body align-self-center">
+                            <h3 class="lobster"><u>The Spanish Cafe</u></h3>
+                            <p class="bungie">
+                                Come get yourself lost in a tropical Spanish paradise. 
+                                In our spanish Cafe life seems a little bit easier with a nice <a class="drinkLink" href="https://athome.starbucks.com/recipe/cafe-cubano" target="_blank"><strong>Cuban coffee</strong></a>
+                                and some smooth tunes to put you at ease.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-4 col-md-3">
+                    <iframe src="https://open.spotify.com/embed/artist/71ey1tIAyP0CDMalhfwT8Q" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                 </div>
+            </div>
+            <hr>
+             <!--Fifth Section-->
+             <div class="row row-content align-items-center">
+                <div class="col-4 col-md-3">
+                    <iframe src="https://open.spotify.com/embed/playlist/5QjgJ20xSbkyfDY2iPERtz" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="col-4 col-md-5">
+                    <div class="media">
+                        <div class="media-body align-self-center">
+                            <h3 class="lobster"><u>The Tokyo Cafe</u></h3>
+                            <p class="bungie">
+                                Tokyo has never been closer. 
+                                Find your innner peace and enjoy your very own <a class="drinkLink" href="https://www.foodandwine.com/recipes/matcha-latte" target="_blank"><srong>Matcha Latte</srong></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <a href="https://www.foodandwine.com/recipes/matcha-latte" target="_blank"><img class="drinkImg" src="img/matchaLatte.jpg"></a>
+                </div>
+                
+            </div>
+            <hr>
+              <!--Accordian Section 2-->
+              <label>
+                  <h3 class="lobster">Music Corner</h3>
+                  <p class="bungie">Some extra playlist in case you want to try something new</p>
+              </label>
+              <div class="accordion accordion-flush mb-3 accordionSize" id="accordionTunes">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-MusicOne" aria-expanded="false" aria-controls="flush-MusicOne">
+                      <h5 class="lobster">If you like relaxing music.</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-MusicOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionTunes">
+                    <div class="accordion-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/31FWVQBp3WQydWLNhO0ACi" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <p class="bungie">Some our favorite beats to just sit down and relax to.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-MusicTwo" aria-expanded="false" aria-controls="flush-MusicTwo">
+                      <h5 class="lobster">If you are looking for some more modern hits.</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-MusicTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionTunes">
+                    <div class="accordion-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbYM3nMM0oPk" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                    <div class="accordion-body">
+                        <p class="bungie">Try out this nice mix then of some of the biggest recent hits.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-MusicThree" aria-expanded="false" aria-controls="flush-MusicThree">
+                      <h5 class="lobster">If you are mending a broken heart.</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-MusicThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionTunes">
+                    <div class="accordion-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbrUpGvoi3TS" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                    <div class="accordion-body">
+                        <p class="bungie">Take a moment to get yourself lost in this playlist then.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        <!--Footer-->
+        <footer class="site-footer">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <img src="img/coffeeHeader.jpg" width="30" height="30" class="d-inline-block align-top ml-2" alt="Main Logo">
+                </a>
+                <h4 class="lobster mx-auto">The Mobile Cafe</h4>
+              </nav>
+        </footer>
+
+
+        <!--Javascript-->
+        <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

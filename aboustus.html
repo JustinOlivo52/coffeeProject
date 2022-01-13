@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!--Css and bootstrap files-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+        <title>About Us</title>
+    </head>
+    <body>
+        <!--The header jumbotron just planning to put an image logo words favorite drink button-->
+            <header class="jumbotron jumbotron-fluid pb-4 pt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                            <a href="index.html"><img src="img/coffeeHeader.jpg" class="img-fluid headImg"></a>
+                        </div>
+                        <div class="col">
+                            <h1>The Mobile Cafe</h1>
+                            <h2>Your Coffee Shop From Home.</h2>
+                        </div>
+                        <div class="col col-md-4 col-xl-2">
+                            <a  href="https://athome.starbucks.com/recipe/ao-may-june21/iced-caramel-macchiato" target="_blank"><button class="btn btn-lg btn-dark text-white mt-3 shakeBtn" id="headerBtn">Our Favorite Drink</button></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/coffeeHeader.jpg"  width="30" height="30" id="navbarLogo" alt="Coffee cup logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item active text-dark mr-2">
+                            <a class="text-nowrap" href="index.html">><button class="btn btn-md btn-light navBtn shakeBtn">Home</button></a>
+                        </li>
+                        <li class="navbar-item text-dark mr-2">
+                            <a href="#"><button class="btn btn-md btn-light navBtn shakeBtn">About Us</button></a>
+                        </li>
+                        <li class="navbar-item text-dark mr-2">
+                            <a href="comingsoon.html"><button class="btn btn-md btn-light navBtn shakeBtn">Coming Soon</button></a>
+                        </li>
+                    </ul>
+                    <span class="col-4 col-md-2 navbar-text ml-auto">
+                        <a role="button" id="loginBtn" data-toggle="modal" data-target="#loginModal">
+                            <button type="button" class="btn btn-light btn-lg text-dark mx-auto shakeBtn">Login</button> 
+                        </a>
+                    </span>
+                </div>
+            </nav>
+            <!--Login Modal-->
+            <div id="loginModal" class="modal fade" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title lobster">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label class="sr-only bungie" for="loginEmail">Email address</label>
+                                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label class="sr-only bungie" for="loginPassword">Password</label>
+                                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio">
+                                                <label class="form-check-label bungie"> Remember me</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <button type="submit" class="btn btn-success btn-sm ml-auto shakeBtn bungie">Sign in</button>
+                                        <button type="button" class="btn btn-secondary btn-sm ml-1 bungie" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--Main content-->
+            <div class="container">
+                <!--Breadcrumbs-->
+                <div class="row">
+                    <div class="col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active">About</li>
+                            </ol>
+                        <h2 class="lobster">About Us</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="rowrow-content">
+                    <div class="col">
+                        <h3 class="fantasy"><u>Our Purpose</u></h3>
+                        <p class="bungie">
+                            Once the pandemic hit I began to miss some of the old things I use to do before the quaratine.
+                            But one of the things I missed the most was going to a local cafe just to read or study.
+                            Even though sites like <a class="drinkLink" href="imissmycafe.com">I miss my cafe</a> helped filled the void.
+                            There were things that I wished could have been done better.
+                            That is when <em>The Mobile Cafe</em> was born!
+                            My goal is to increase the cafe in time to give users a mutlifaced experience.
+                            Making it their own little cafe that they can do from home. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+          <!--Footer-->
+          <footer class="site-footer fixed-bottom">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <img src="img/coffeeHeader.jpg" width="30" height="30" class="d-inline-block align-top ml-2" alt="Main Logo">
+                </a>
+                <h4 class="lobster mx-auto">The Mobile Cafe</h4>
+              </nav>
+        </footer>
+
+
+        <!--Javascript-->
+        <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

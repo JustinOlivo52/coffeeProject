@@ -1,0 +1,134 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.jumbotron {
+    background-color: rgb(245, 193, 141);
+}
+
+.headImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-family: 'Bungie Shade', cursive;
+    text-align: center;
+} 
+
+header h2 {
+    font-family: 'Festive', cursive;
+    text-align: center;
+}
+
+#headerBtn {
+    color: white;
+    border-radius: 20px;
+}
+
+#navbarLogo {
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: bisque;
+}
+
+.navbar-item {
+    font-family: 'Bungie Shade', cursive;
+    font-weight: bold;
+    /*border: 2px solid;
+    background-color: white;*/
+}
+
+.navBtn {
+    border: 2px gold solid;
+    border-radius: 20%;
+    font-weight: bold;
+}
+
+#loginBtn {
+    background-color:bisque;
+    border-radius: 20px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    size: 50px;
+}
+
+.drinkLink {
+    color: rgba(255, 60, 0, 0.993);
+}
+
+.drinkLink:hover {
+    color:seagreen;
+    border: 2px solid blue;
+    background-color: beige;
+}
+
+.drinkImg {
+    height: 300px;
+    width: 300px;
+    border: 3px gold dotted;
+    align-content: right;
+    border-radius: 20%;
+}
+
+
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.bungie {
+    font-family: 'Bungie', cursive;
+}
+
+.festive {
+    font-family: 'Festive' cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+dt {
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    border: 3px solid gold;
+    background-color: bisque;
+    padding: 3px;
+}
+
+/*Button animation test*/
+.shakeBtn:hover {
+    animation: effect 0.4s infinite;
+}
+
+@keyframes effect {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-4px) rotate(-4deg);
+    }
+
+    40% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(4deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
